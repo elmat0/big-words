@@ -1,3 +1,4 @@
+//
 //   #####   ######   ####           ##   ##   ####   #####   #####    ####  
 //   ##  ##    ##    ##              ##   ##  ##  ##  ##  ##  ##  ##  ##     
 //   #####     ##    ## ###   ####   ## # ##  ##  ##  #####   ##  ##   ####  
@@ -5,10 +6,17 @@
 //   #####   ######   ####            ## ##    ####   ##  ##  #####   ####  
 //
 //   Mat Milne - 2023
+////
 
 const vscode = require('vscode');
 const letters = require('./letters');
 const comments = require('./comments');
+
+//   ##   ##   ####   ##  ##  ######         ######  ###### 
+//   ### ###  ##  ##  ## ##   ##               ##      ##   
+//   ## # ##  ######  ####    ####             ##      ##   
+//   ##   ##  ##  ##  ## ##   ##               ##      ##   
+//   ##   ##  ##  ##  ##  ##  ######         ######    ##   
 
 function createAsciiArt(word, letters, comment) {
     let L1 = comment[0] + '  ';
@@ -23,6 +31,14 @@ function createAsciiArt(word, letters, comment) {
         for (let j = 0; j < 5; j++) {
             lines[j] += charLines[j+1];
         }
+
+//   ######   ####    ####   ######  ######  #####          ######   ####  
+//   ##      ##  ##  ##        ##    ##      ##  ##           ##    ##  ## 
+//   ####    ######   ####     ##    ####    #####            ##    ##  ## 
+//   ##      ##  ##      ##    ##    ##      ##  ##           ##    ##  ## 
+//   ######  ##  ##   ####   ######  ######  ##  ##           ##     ####  
+
+
     }
     if (comment[1]) {
         for (let i = 0; i < lines.length; i++) {
@@ -32,6 +48,12 @@ function createAsciiArt(word, letters, comment) {
     lines = '\n' + lines.join('\n') + '\n'
     return lines;
 }
+
+//    ####    ####   #####    ####   ##      ##              ####    ####   #####   ###### 
+//   ##      ##  ##  ##  ##  ##  ##  ##      ##             ##  ##  ##  ##  ##  ##  ##     
+//    ####   ##      #####   ##  ##  ##      ##             ##      ##  ##  ##  ##  ####   
+//       ##  ##  ##  ##  ##  ##  ##  ##      ##             ##  ##  ##  ##  ##  ##  ##     
+//    ####    ####   ##  ##   ####   ######  ######          ####    ####   #####   ###### 
 
 function activate(context) {
     console.log('Congratulations, your extension "big-words" is now active!');
