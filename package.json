@@ -12,14 +12,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:big-words.gobig"
+		"onCommand:big-words.embiggen"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "big-words.gobig",
-								"title": "Go Big"
+				"command": "big-words.embiggen",
+								"title": "Embiggen"
 			}
 		]
 	},

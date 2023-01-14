@@ -1,5 +1,5 @@
 # big-words
-## 
+
 This wont make you shakespear, it just makes scrolling through looooooong scripts easier. 
 
 * Open a script document and position the cursor
