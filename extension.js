@@ -12,12 +12,6 @@ const vscode = require('vscode');
 const letters = require('./letters');
 const comments = require('./comments');
 
-//   ##   ##   ####   ##  ##  ######         ######  ###### 
-//   ### ###  ##  ##  ## ##   ##               ##      ##   
-//   ## # ##  ######  ####    ####             ##      ##   
-//   ##   ##  ##  ##  ## ##   ##               ##      ##   
-//   ##   ##  ##  ##  ##  ##  ######         ######    ##   
-
 function createAsciiArt(word, letters, comment) {
     let L1 = comment[0] + '  ';
     let L2 = comment[0] + '  ';
@@ -32,11 +26,6 @@ function createAsciiArt(word, letters, comment) {
             lines[j] += charLines[j+1];
         }
 
-//   ######   ####    ####   ######  ######  #####          ######   ####  
-//   ##      ##  ##  ##        ##    ##      ##  ##           ##    ##  ## 
-//   ####    ######   ####     ##    ####    #####            ##    ##  ## 
-//   ##      ##  ##      ##    ##    ##      ##  ##           ##    ##  ## 
-//   ######  ##  ##   ####   ######  ######  ##  ##           ##     ####  
 
 
     }
@@ -48,12 +37,6 @@ function createAsciiArt(word, letters, comment) {
     lines = '\n' + lines.join('\n') + '\n'
     return lines;
 }
-
-//    ####    ####   #####    ####   ##      ##              ####    ####   #####   ###### 
-//   ##      ##  ##  ##  ##  ##  ##  ##      ##             ##  ##  ##  ##  ##  ##  ##     
-//    ####   ##      #####   ##  ##  ##      ##             ##      ##  ##  ##  ##  ####   
-//       ##  ##  ##  ##  ##  ##  ##  ##      ##             ##  ##  ##  ##  ##  ##  ##     
-//    ####    ####   ##  ##   ####   ######  ######          ####    ####   #####   ###### 
 
 function activate(context) {
     console.log('Congratulations, your extension "big-words" is now active!');
