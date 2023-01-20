@@ -63,7 +63,7 @@ function activate(context) {
 			return;
 		}
 
-		// Get current document language type lookup appropriate comment or fallback to #
+		// Get current document language type, lookup appropriate comment or fallback to #
 		let comment = comments[editor.document.languageId] || comments['default'];
 
 		// Get inspiration and make art. Be bold. Make a statement.
