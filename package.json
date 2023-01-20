@@ -3,22 +3,21 @@
 	"displayName": "big-words",
 	"description": "Use big words in code comments.",
 	"publisher": "MCM",
-	"version": "0.0.4",
+	"version": "0.0.6",
 	"icon": "icon.png",
+	"activationEvents": [
+		"onCommand:big-words.embiggen"
+	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/elmat0/big-words"
+		"url": "https://github.com/elmat0/big-words.git"
 		},
 	"homepage": "https://github.com/elmat0/big-words/blob/main/README.md",
 	"engines": {
-		"vscode": "^1.39.0",
-				"azdata": "*"
+		"vscode": "^1.39.0"
 	},
 	"categories": [
 		"Other"
-	],
-	"activationEvents": [
-		"onCommand:big-words.embiggen"
 	],
 	"main": "./extension.js",
 	"contributes": {
