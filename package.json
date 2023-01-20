@@ -3,7 +3,13 @@
 	"displayName": "big-words",
 	"description": "Use big words in code comments.",
 	"publisher": "MCM",
-	"version": "0.0.3",
+	"version": "0.0.4",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/elmat0/big-words"
+		},
+	"homepage": "https://github.com/elmat0/big-words/blob/main/README.md",
 	"engines": {
 		"vscode": "^1.39.0",
 				"azdata": "*"
@@ -23,12 +29,6 @@
 			}
 		]
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/elmat0/big-words"
-		},
-	"homepage": "https://github.com/elmat0/big-words/blob/main/README.md",
-	"icon": "./icon.png",
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
