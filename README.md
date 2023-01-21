@@ -2,7 +2,6 @@
 
 This wont make you Shakespeare, but it sure can help you read it!
 
-![minimap](https://github.com/elmat0/big-words/blob/main/icon.png?raw=true)
 
 * Open a script in vscode 
 * Position the cursor 
