@@ -2,6 +2,11 @@
 
 This wont make you Shakespeare, but it sure can help you read it!
 
+<img src="screenshot.jpg"
+  alt="minimap"
+  id="minimap"
+  width="240"
+/>
 
 * Open a script in vscode 
 * Position the cursor 
