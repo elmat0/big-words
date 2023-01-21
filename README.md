@@ -6,7 +6,7 @@ This wont make you Shakespeare, but it sure can help you read it!
   alt="minimap"
   id="minimap"
   width="240"
-  style="onclick='enlargeImg()'
+  style="onclick='enlargeImg()'"
 />
 
 * Open a script in vscode 
